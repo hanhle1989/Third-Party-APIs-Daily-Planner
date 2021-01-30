@@ -21,6 +21,7 @@ $(document).ready(function () {
             var scheduleHour = $(hour).attr("hour-value");
             var scheduleHour = parseInt(scheduleHour);
 
+            //changing color depends on the time//
             if (scheduleHour === currentHour) {
                 $(hour).addClass("present");
             }
@@ -38,6 +39,7 @@ $(document).ready(function () {
 
 );
 
+//save button function//
 saveBtn.on("click", function () {
     var click = $(this).attr("hour-value");
     var inputField = "#" + click;

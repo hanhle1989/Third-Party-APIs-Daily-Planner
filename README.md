@@ -21,7 +21,7 @@ THEN the saved events persist
 
 
 ## Mock-Up
-![timed quiz demo](./asset/screenshot.jpg)
+![timed quiz demo](./assets/screenshot.jpg)
 
 ## Links to the deployed application:
 [GitHub Repository](https://github.com/hanhle1989/Third-Party-APIs-Daily-Planner)

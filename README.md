@@ -1,22 +1,22 @@
 # Web-APIs-Mini-Timed-Quiz
-Week 4 Homework: develop a time quiz
+Week 5 Homework: develop a daily planner using third party APIs
 
-## Develop a mini timed quiz that:
+## Develop a daily planner that:
 ```
-WHEN I click the start button
-THEN a timer starts at 60 seconds and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN 10 seconds are subtracted from the clock
-OR WHEN I answer a question correctly
-THEN 5 seconds are added to the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with time blocks for standard business hours
+WHEN I view the time blocks for that day
+THEN each time block is color-coded to indicate whether it is in the past, present, or future
+WHEN I click into a time block
+THEN I can enter an event
+WHEN I click the save button for that time block
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
 
-Note: The score is the same as the remained time
 ```
 
 
@@ -24,5 +24,5 @@ Note: The score is the same as the remained time
 ![timed quiz demo](./asset/screenshot.jpg)
 
 ## Links to the deployed application:
-[GitHub Repository](https://github.com/hanhle1989/Web-APIs-Mini-Timed-Quiz)
-and [Deployed Application](https://hanhle1989.github.io/Web-APIs-Mini-Timed-Quiz/)
+[GitHub Repository](https://github.com/hanhle1989/Third-Party-APIs-Daily-Planner)
+and [Deployed Application](https://hanhle1989.github.io/Third-Party-APIs-Daily-Planner/)

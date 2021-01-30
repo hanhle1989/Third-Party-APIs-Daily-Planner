@@ -4,7 +4,7 @@ var currentHour = moment().hours();
 
 var saveBtn = $(".saveBtn");
 
-let timeBlock = ["#9am", "#10am", "#11am", "#12pm", "#1pm", "#2pm", "#3pm", "#4pm", "#5pm"];
+let timeBlock = ["#9", "#10", "#11", "#12", "#13", "#14", "#15", "#16", "#17"];
     for (let i = 0; i < timeBlock.length; i++) {
         var savedEvent = $(".saved-event")
         $(timeBlock[i]).val(localStorage.getItem(timeBlock[i]));
@@ -16,11 +16,11 @@ $(document).ready(function () {
     //retrieve and display current date//
     $("#currentDay").text("Today's Date: " + currentDate);
     
-        for (var i = 1; i <= 12; i++) {
-            var scheduleHour = $("#" + i + "Row").attr("hour-data");
+        for (var i = 9; i <= 17; i++) {
             var hour = "#" + i
-            var scheduleHour = parseInt(hour);
-            
+            var scheduleHour = $(hour).attr("hour-value");
+            var scheduleHour = parseInt(scheduleHour);
+
             if (scheduleHour === currentHour) {
                 $(hour).addClass("present");
             }
@@ -40,6 +40,7 @@ $(document).ready(function () {
 
 saveBtn.on("click", function () {
     var click = $(this).attr("hour-value");
-    var eventInput = $(click).val();
-    localStorage.setItem(click, eventInput);
+    var inputField = "#" + click;
+    var eventInput = $(inputField).val();
+    localStorage.setItem(inputField, eventInput);
 });
